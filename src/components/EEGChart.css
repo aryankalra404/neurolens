@@ -1,0 +1,170 @@
+.eeg-chart {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.eeg-chart__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.eeg-chart__title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.eeg-chart__sub {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.eeg-chart__status {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--color-success);
+  letter-spacing: 0.1em;
+}
+
+.eeg-chart__live-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--color-success);
+  box-shadow: 0 0 8px var(--color-success);
+  animation: blink 1.2s ease-in-out infinite;
+}
+.eeg-chart__live-dot--off {
+  background: var(--text-muted);
+  box-shadow: none;
+  animation: none;
+}
+
+.eeg-chart__empty {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  min-height: 200px;
+  border: 1px dashed var(--border-subtle);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.eeg-chart__demo-waves {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.eeg-chart__empty-msg {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.25rem 1.75rem;
+  text-align: center;
+}
+
+.eeg-chart__empty p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  letter-spacing: 0.04em;
+  margin: 0;
+  opacity: 0.75;
+  background: rgba(0,0,0,0.35);
+  padding: 0.35rem 0.9rem;
+  border-radius: 99px;
+  border: 1px solid var(--border-subtle);
+}
+
+.eeg-chart__toggles {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.eeg-chart__toggle {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: 100px;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: var(--font-mono);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.eeg-chart__toggle--on {
+  border-color: var(--band-color);
+  color: var(--text-primary);
+  background: var(--bg-card);
+}
+
+.eeg-chart__toggle-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--band-color, var(--text-muted));
+}
+
+.eeg-chart__graph {
+  /* negate x-axis label space */
+  margin-bottom: -4px;
+  flex: 1;
+  min-height: 200px;
+}
+
+.eeg-chart__footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0.75rem 1.25rem;
+  border-top: 1px solid var(--border-subtle);
+  background: rgba(0,0,0,0.1);
+}
+
+.eeg-tooltip {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+}
+
+.eeg-tooltip__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+  color: var(--text-secondary);
+}
+.eeg-tooltip__row:last-child { margin-bottom: 0; }
+
+.eeg-tooltip__dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}

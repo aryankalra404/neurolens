@@ -1,0 +1,15 @@
+.pf__container {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pf__particle {
+  position: absolute;
+  border-radius: 50%;
+  background: var(--accent-particle);
+  animation: particle-drift linear infinite;
+  will-change: transform, opacity;
+}

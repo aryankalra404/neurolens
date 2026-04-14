@@ -1,0 +1,241 @@
+/* ── Overlay ───────────────────────────────── */
+.calib-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 8, 18, 0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 24px;
+}
+
+[data-theme='light'] .calib-overlay {
+  background: rgba(240, 248, 255, 0.65);
+}
+
+/* ── Card ──────────────────────────────────── */
+.calib-card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 24px;
+  padding: 48px 40px;
+  text-align: center;
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.5), 0 0 40px rgba(0, 240, 255, 0.04);
+}
+
+[data-theme='light'] .calib-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(2, 132, 199, 0.1);
+  box-shadow: 0 20px 60px rgba(2, 132, 199, 0.08), 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* ── Step container ─────────────────────────── */
+.calib-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+
+/* ── Icon ──────────────────────────────────── */
+.calib-icon-wrap {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: rgba(0, 240, 255, 0.1);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--signal-alpha);
+  margin-bottom: 20px;
+}
+
+.calib-icon-wrap--success {
+  background: rgba(0, 240, 160, 0.1);
+  border-color: rgba(0, 240, 160, 0.25);
+  color: #00f0a0;
+}
+
+[data-theme='light'] .calib-icon-wrap {
+  background: rgba(2, 132, 199, 0.08);
+  border-color: rgba(2, 132, 199, 0.2);
+  color: #0284c7;
+}
+
+[data-theme='light'] .calib-icon-wrap--success {
+  background: rgba(22, 163, 74, 0.08);
+  border-color: rgba(22, 163, 74, 0.2);
+  color: #16a34a;
+}
+
+/* ── Typography ────────────────────────────── */
+.calib-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 10px;
+}
+
+.calib-desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  max-width: 360px;
+  margin: 0 0 12px;
+}
+
+.calib-desc strong { font-weight: 600; }
+
+
+
+
+.calib-instruction {
+  font-size: 15px;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-top: 18px;
+}
+
+/* ── Duration selector ─────────────────────── */
+.calib-duration-row {
+  display: flex;
+  gap: 12px;
+  margin: 16px 0 24px;
+}
+
+.calib-duration-btn {
+  flex: 1;
+  padding: 10px 16px;
+  border-radius: 10px;
+  border: 1px solid var(--border-subtle);
+  background: transparent;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.calib-duration-btn:hover {
+  border-color: var(--signal-alpha);
+  color: var(--text-primary);
+}
+
+.calib-duration-btn.active {
+  background: rgba(0, 240, 255, 0.12);
+  border-color: var(--signal-alpha);
+  color: var(--signal-alpha);
+}
+
+[data-theme='light'] .calib-duration-btn.active {
+  background: rgba(2, 132, 199, 0.1);
+  border-color: #0284c7;
+  color: #0284c7;
+}
+
+/* ── Primary action button ─────────────────── */
+.calib-start-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  background: var(--signal-alpha, #00f0ff);
+  color: #050812 !important;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 4px;
+  box-shadow: 0 6px 20px rgba(2, 132, 199, 0.25);
+}
+
+.calib-start-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px rgba(2, 132, 199, 0.35);
+}
+
+.calib-start-btn:active { transform: translateY(0); }
+
+/* ── Skip link ─────────────────────────────── */
+.calib-skip-btn {
+  background: none;
+  border: none;
+  color: var(--text-muted, rgba(255,255,255,0.3));
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 14px;
+  transition: color 0.2s;
+}
+
+.calib-skip-btn:hover { color: var(--text-secondary); }
+
+/* ── Pulse rings wrap ──────────────────────── */
+.calib-pulse-wrap {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0 8px;
+}
+
+/* Animated outer rings */
+.calib-pulse {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0, 240, 255, 0.06);
+  border: 1px solid rgba(0, 240, 255, 0.12);
+  animation: calib-pulse-anim 3s ease-in-out infinite;
+}
+.calib-pulse--1 { width: 100%; height: 100%; animation-delay: 0s; }
+.calib-pulse--2 { width: 80%;  height: 80%;  animation-delay: 0.6s; }
+.calib-pulse--3 { width: 60%;  height: 60%;  animation-delay: 1.2s; }
+
+@keyframes calib-pulse-anim {
+  0%, 100% { transform: scale(1);    opacity: 0.6; }
+  50%       { transform: scale(1.08); opacity: 1;   }
+}
+
+[data-theme='light'] .calib-pulse {
+  background: rgba(2, 132, 199, 0.04);
+  border-color: rgba(2, 132, 199, 0.12);
+}
+
+/* ── SVG progress ring ─────────────────────── */
+.calib-ring {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.calib-ring__track {
+  stroke: rgba(255, 255, 255, 0.06);
+}
+
+.calib-ring__fill {
+  stroke: var(--signal-alpha, #00f0ff);
+  transition: stroke-dashoffset 1s linear;
+  filter: drop-shadow(0 0 4px rgba(0, 240, 255, 0.5));
+}
+
+[data-theme='light'] .calib-ring__track { stroke: rgba(2, 132, 199, 0.1); }
+[data-theme='light'] .calib-ring__fill  { stroke: #0284c7; filter: drop-shadow(0 0 4px rgba(2, 132, 199, 0.3)); }
+
+/* ── Countdown number ──────────────────────── */
+.calib-countdown {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.02em;
+}

@@ -1,0 +1,33 @@
+.signal-bands {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.signal-bands__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 1.5rem;
+}
+
+.signal-bands__title {
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--text);
+  margin: 0;
+}
+
+.signal-bands__subtitle {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+}
+
+.signal-bands__chart-wrapper {
+  flex: 1;
+  min-height: 200px;
+}

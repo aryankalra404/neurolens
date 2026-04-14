@@ -1,0 +1,131 @@
+.metric-card {
+  position: relative;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 22px 22px 20px;
+  overflow: hidden;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.metric-card:hover {
+  border-color: var(--border-glow);
+  box-shadow: var(--shadow-glow);
+}
+
+.metric-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.metric-card__icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 17px;
+  color: var(--signal-alpha);
+}
+
+.metric-card__trend {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 100px;
+}
+
+.metric-card__trend--up {
+  color: var(--color-success);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.metric-card__trend--down {
+  color: var(--color-danger);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+}
+
+.metric-card__body { padding-right: 48px; }
+
+.metric-card__value {
+  font-family: var(--font-display);
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.metric-card__unit {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 3px;
+}
+
+.metric-card__label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-top: 6px;
+}
+
+.metric-card__desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-top: 3px;
+  line-height: 1.5;
+}
+
+/* Offline / disconnected state */
+.metric-card--offline {
+  opacity: 0.6;
+}
+
+.metric-card--offline .metric-card__icon {
+  opacity: 0.5;
+}
+
+.metric-card__value--offline {
+  min-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+.metric-card__dash {
+  font-size: 28px;
+  color: var(--text-muted);
+  letter-spacing: 0.1em;
+  opacity: 0.4;
+}
+
+@keyframes ring-idle {
+  0%, 100% { opacity: 0.15; }
+  50%       { opacity: 0.35; }
+}
+
+.metric-card__ring-pulse {
+  animation: ring-idle 2.4s ease-in-out infinite;
+}
+
+/* Ring */
+.metric-card__ring-wrap {
+  position: absolute;
+  bottom: 16px;
+  right: 16px;
+  width: 52px;
+  height: 52px;
+}
+
+.metric-card__ring {
+  width: 100%;
+  height: 100%;
+  transition: stroke-dasharray 0.8s ease;
+}

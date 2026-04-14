@@ -1,0 +1,2 @@
+/* Signup shares styles with Login.css — import it for shared rules */
+@import './Login.css';

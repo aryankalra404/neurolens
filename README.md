@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/homepage.png" alt="NeuroLens Dashboard" width="80%" />
+<img src="./assets/homepage.png" alt="NeuroLens Dashboard" width="70%" />
 
 # NeuroLens
 
@@ -172,9 +172,9 @@ Peaceful VR environments help users reach a flow state significantly faster than
 An Augmented Reality coach prototype uses live brainwave data to guide users through Neural Reset sessions when stress levels spike — bringing Nora out of the browser and into the physical world.
 
 <div align="center">
-  <img src="./assets/VR.png" alt="VR Flow State" width="35%" />
-  &nbsp;&nbsp;
-  <img src="./assets/VRnora.jpg" alt="AR Neural Coaching" width="60%" />
+  <img src="./assets/VR.png" alt="VR Flow State" width="25%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="./assets/VRnora.jpg" alt="AR Neural Coaching" width="34%" />
 </div>
 
 ```

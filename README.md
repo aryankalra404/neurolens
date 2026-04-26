@@ -63,7 +63,7 @@ When the dashboard detects sustained stress or fatigue above threshold, it trigg
 ### 📊 Dashboard & Session History
 
 <div align="center">
-  <img src="./assets/dashboard-eeg.png" alt="Dashboard with EEG Graph" width="80%" />
+  <img src="./assets/dashboard.png" alt="Dashboard with EEG Graph" width="80%" />
 </div>
 
 - Arc gauges per cognitive state with live updates via Web Serial API

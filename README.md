@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="./assets/homepage.png" alt="NeuroLens Dashboard" width="100%" />
+<img src="./assets/homepage.png" alt="NeuroLens Dashboard" width="80%" />
 
 # NeuroLens
 
@@ -30,7 +30,7 @@ Hardware Sensing → Real-Time Dashboard → Neural Intervention → AI Retrospe
 ## System Architecture
 
 <div align="center">
-  <img src="./assets/flowchart.png" alt="System Flowchart" width="85%" />
+  <img src="./assets/flowchart.jpg" alt="System Flowchart" width="75%" />
 </div>
 
 ---
@@ -52,7 +52,7 @@ Live visualization of four cognitive states derived from raw EEG signals:
 When the dashboard detects sustained stress or fatigue above threshold, it triggers **Neural Reset** — a guided recalibration session powered by Nora, the in-app EEG wellness coach.
 
 <div align="center">
-  <img src="./assets/neural-reset-nora.png" alt="Neural Reset — Nora" width="80%" />
+  <img src="./assets/nora.png" alt="Neural Reset — Nora" width="80%" />
 </div>
 
 - Structured **box breathing** with animated visual guides
@@ -82,7 +82,7 @@ AI-powered post-session insights via LLM integration:
 ## Hardware
 
 <div align="center">
-  <img src="./assets/circuit-diagram.png" alt="Circuit Diagram" width="75%" />
+  <img src="./assets/circuit.jpg" alt="Circuit Diagram" width="75%" />
 </div>
 
 | Component | Role |
@@ -172,7 +172,9 @@ Peaceful VR environments help users reach a flow state significantly faster than
 An Augmented Reality coach prototype uses live brainwave data to guide users through Neural Reset sessions when stress levels spike — bringing Nora out of the browser and into the physical world.
 
 <div align="center">
-  <img src="./assets/VR.png" alt="XR Integration" width="80%" />
+  <img src="./assets/VR.png" alt="VR Flow State" width="35%" />
+  &nbsp;&nbsp;
+  <img src="./assets/VRnora.jpg" alt="AR Neural Coaching" width="60%" />
 </div>
 
 ```
@@ -223,9 +225,3 @@ neurolens/
 ## License
 
 MIT © Aryan
-
----
-
-<div align="center">
-  <sub>Built with precision hardware and a lot of EEG data.</sub>
-</div>

@@ -253,9 +253,10 @@ neurolens/
   - Showcased real-time dashboard to university leadership and industry evaluators.
  
 <p align="center">
-  <img src="./assets/senseathon.jpg" width="45%" />
-  <img src="./assets/innovationcontest.jpg" width="45%" />
-  <img src="./assets/arduinodayiitb.jpg" width="45%" />
+  <img src="./assets/innovationcontest.jpg" width="31%" />
+  &nbsp;&nbsp;&nbsp;
+  <img src="./assets/arduinodayiitb.jpg" width="44%" />
+  <img src="./assets/senseathon.jpg" width="31%" />
 </p>
     
 ---

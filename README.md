@@ -73,10 +73,12 @@ When the dashboard detects sustained stress or fatigue above threshold, it trigg
 - **Guided meditation** segments with pre-recorded audio
 - Supabase-backed **streak tracking** and session calendar
 
+<<<<<<< HEAD
+=======
 ### 📊 Dashboard & Session History
 
 <div align="center">
-  <img src="./assets/dashboard-eeg.png" alt="Dashboard with EEG Graph" width="80%" />
+  <img src="./assets/dashboard.png" alt="Dashboard with EEG Graph" width="80%" />
 </div>
 
 - Arc gauges per cognitive state with live updates via Web Serial API
@@ -84,6 +86,7 @@ When the dashboard detects sustained stress or fatigue above threshold, it trigg
 - Stress alert banner on sustained threshold breach
 - Session replay and historical trend graphs
 
+>>>>>>> b740181ef4d367a449fca7eb5ec9865564bbc141
 ### 🤖 Retrospective Neural Analysis
 AI-powered post-session insights via LLM integration:
 - Pattern identification across sessions

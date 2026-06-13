@@ -16,7 +16,7 @@
   justify-content: center;
   overflow: hidden;
 }
-
+ 
 /* Canvas that Spline generates — let it fill naturally and scale it up */
 .brain-viewer__spline-slot canvas {
   width: 100% !important;
